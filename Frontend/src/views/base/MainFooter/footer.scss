@@ -1,0 +1,85 @@
+#heroFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212529;
+    p{
+        margin-bottom: 0;
+    }
+}
+.footerCtr{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80%;
+    padding: 20px;
+}
+.ftrGallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    gap: 10px;
+    div{
+        width: 100px;
+        height: 100px;
+      
+    }
+}
+.ftrGal{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    h1{
+        color: #ffffff;
+        font-size: 30px;
+        
+    }
+}
+.ftrContact{
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        i{
+            font-size: 20px;
+            color: #999999;
+
+        }
+        i:hover{
+            cursor: pointer;
+            transition: 1s;
+            color: rgb(246, 30, 35);
+        }
+    }
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    h1{
+        
+        color: #ffffff;
+        font-size: 30px;
+    }
+    h6,p,span{
+color: #999999;
+font-size: 15px;
+    }
+
+}
+.ftrTime{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: column;
+    h1{
+        color: #ffffff;
+        font-size: 30px;
+    }
+    p,span{
+        color: #999999;
+font-size: 15px;    
+    }
+}
