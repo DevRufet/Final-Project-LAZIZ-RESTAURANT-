@@ -1,0 +1,20 @@
+.adminReservation{
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    
+    table{
+        width: 100%;
+        border: 1px solid gray;
+    }
+    tr,td,th{
+        border: 1px solid gray;
+        padding: 20px;
+    }
+    button{
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgb(180, 158, 34);
+        font-size: 20px;
+    }
+}

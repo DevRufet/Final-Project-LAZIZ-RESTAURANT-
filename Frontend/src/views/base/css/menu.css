@@ -1,0 +1,15 @@
+#menuSec {
+  background-image: url("https://preview.colorlib.com/theme/pato/images/bg-title-page-01.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+#menuSec h1 {
+  font-size: 50px;
+  font-weight: bolder;
+  color: #ffffff;
+  letter-spacing: 5px;
+}/*# sourceMappingURL=menu.css.map */

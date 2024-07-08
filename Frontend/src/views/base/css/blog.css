@@ -1,0 +1,68 @@
+#heroBlogSec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://preview.colorlib.com/theme/pato/images/bg-title-page-03.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+}
+#heroBlogSec h1 {
+  letter-spacing: 5px;
+  font-size: 50px;
+  font-weight: 500;
+  color: white;
+}
+
+.blogImgCtr {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.blogImgCtr .blogItemsImgs {
+  padding: 20px;
+  border-bottom: 0.5px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.blogImgCtr .blogItemsImgs div {
+  height: 50vh;
+}
+.blogImgCtr .blogItemsImgs div img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blogImgCtr .blogItemsImgs h1 {
+  font-weight: 300;
+}
+.blogImgCtr .blogItemsImgs p {
+  font-size: 20px;
+}
+.blogImgCtr .blogItemsImgs span {
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.blogImgCtr .blogItemsImgs span a {
+  color: rgb(246, 30, 35);
+}
+.blogImgCtr .blogItemsImgs span i {
+  font-size: 20px;
+  color: black;
+}
+
+.blogImgSec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=blog.css.map */

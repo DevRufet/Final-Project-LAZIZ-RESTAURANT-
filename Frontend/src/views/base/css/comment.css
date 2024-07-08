@@ -1,0 +1,88 @@
+.commentImgCtr {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.commentImgCtr .commentItemsImgs {
+  padding: 20px;
+  border-bottom: 0.5px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.commentImgCtr .commentItemsImgs div {
+  height: 50vh;
+}
+.commentImgCtr .commentItemsImgs div img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.commentImgCtr .commentItemsImgs h1 {
+  font-weight: 300;
+}
+.commentImgCtr .commentItemsImgs p {
+  font-size: 20px;
+}
+.commentImgCtr .commentItemsImgs span {
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.commentImgCtr .commentItemsImgs span a {
+  color: rgb(246, 30, 35);
+}
+.commentImgCtr .commentItemsImgs span i {
+  font-size: 20px;
+  color: black;
+}
+
+.commentImgSec {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.commentImgSec .blogCommentSec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 60px;
+  width: 50%;
+}
+.commentImgSec .blogCommentSec .blogCommentDesc {
+  font-size: 30px;
+}
+.commentImgSec .blogCommentSec .blogCommentDesc i {
+  font-size: 30px;
+}
+.commentImgSec .blogCommentSec .commentDirect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.commentImgSec .blogCommentSec .commentDirect input {
+  font-size: 30px;
+  border-radius: 10px;
+  border: 3px solid gray;
+}
+.commentImgSec .blogCommentSec .commentDirect button {
+  width: 60px;
+  height: 60px;
+  background-color: rgb(246, 30, 35);
+  border-radius: 50px;
+}
+.commentImgSec .blogCommentSec .commentDirect button i {
+  font-size: 30px;
+}/*# sourceMappingURL=comment.css.map */

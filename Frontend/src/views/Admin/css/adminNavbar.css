@@ -1,0 +1,113 @@
+#adminNav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.adminIcon {
+  z-index: 999;
+  background-color: #Ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid grey;
+}
+.adminIcon button {
+  background-color: rgb(180, 158, 34);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+.adminIcon button p {
+  font-size: 20px;
+  font-weight: 400;
+}
+.adminIcon button i {
+  font-size: 20px;
+  color: rgb(246, 30, 35);
+}
+.adminIcon button p {
+  margin: 0;
+}
+.adminIcon div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(246, 30, 35);
+  border: 3px solid rgb(246, 30, 35);
+  border-radius: 10px;
+  padding: 5px;
+}
+.adminIcon div p {
+  margin-bottom: 0;
+}
+
+.adminItem {
+  display: flex;
+  position: fixed;
+  top: 90px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 20%;
+  border-right: 1px solid gray;
+  height: 86vh;
+}
+.adminItem ul {
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  flex-direction: column;
+}
+.adminItem ul a {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(180, 158, 34);
+}
+.adminItem ul a:hover {
+  color: rgb(246, 30, 35);
+  transition: 1s;
+}
+.adminItem button {
+  margin-left: 20px;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: rgb(180, 158, 34);
+}
+.adminItem button i {
+  font-size: 20px;
+  color: rgb(246, 30, 35);
+}
+.adminItem button p {
+  color: rgb(180, 158, 34);
+  font-size: 20px;
+  margin: 0;
+}
+
+.navOutlet {
+  display: flex;
+}
+
+.navMax {
+  width: 100%;
+  position: relative;
+}/*# sourceMappingURL=adminNavbar.css.map */

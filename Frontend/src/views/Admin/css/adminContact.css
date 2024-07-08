@@ -1,0 +1,22 @@
+.adminContact {
+  width: 79%;
+  position: absolute;
+  top: 100px;
+  left: 300px;
+}
+.adminContact table {
+  width: 100%;
+  border: 1px solid gray;
+}
+.adminContact tr, .adminContact td, .adminContact th {
+  border: 1px solid gray;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+.adminContact button {
+  font-size: 20px;
+  background-color: rgb(180, 158, 34);
+  padding: 5px;
+  border-radius: 10px;
+}/*# sourceMappingURL=adminContact.css.map */

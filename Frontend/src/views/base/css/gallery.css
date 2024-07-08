@@ -1,0 +1,62 @@
+#heroGalleryView {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.galleryViewCtr {
+  margin-top: 20px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.galleryViewCtr button {
+  padding: 5px;
+  font-size: 25px;
+  font-weight: 400;
+  color: #222222;
+  background-color: #ffffff;
+}
+.galleryViewCtr button:hover {
+  cursor: pointer;
+  background-color: #222222;
+  color: #ffffff;
+  transition: 1s;
+  border-radius: 10px;
+}
+
+#heroGalleryImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://preview.colorlib.com/theme/pato/images/bg-title-page-02.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+}
+#heroGalleryImg h1 {
+  font-size: 50px;
+  color: #ffffff;
+  letter-spacing: 5px;
+  font-weight: bolder;
+}
+
+.galleryImgCtr1 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  border-radius: 10px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.galleryImgCtr1 div img {
+  border-radius: 10px;
+}
+.galleryImgCtr1 div img:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=gallery.css.map */

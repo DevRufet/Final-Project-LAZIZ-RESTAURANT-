@@ -1,0 +1,85 @@
+#heroFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #212529;
+}
+#heroFooter p {
+  margin-bottom: 0;
+}
+
+.footerCtr {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 80%;
+  padding: 20px;
+}
+
+.ftrGallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+.ftrGallery div {
+  width: 100px;
+  height: 100px;
+}
+
+.ftrGal {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.ftrGal h1 {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.ftrContact {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.ftrContact div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.ftrContact div i {
+  font-size: 20px;
+  color: #999999;
+}
+.ftrContact div i:hover {
+  cursor: pointer;
+  transition: 1s;
+  color: rgb(246, 30, 35);
+}
+.ftrContact h1 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.ftrContact h6, .ftrContact p, .ftrContact span {
+  color: #999999;
+  font-size: 15px;
+}
+
+.ftrTime {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-direction: column;
+}
+.ftrTime h1 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.ftrTime p, .ftrTime span {
+  color: #999999;
+  font-size: 15px;
+}/*# sourceMappingURL=footer.css.map */

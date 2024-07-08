@@ -1,10 +1,64 @@
 import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
+import nodemailer from 'nodemailer'
+import { usersRouter } from './src/Routes/UsersRoute.js';
+import 'dotenv/config'
+import { authRouter } from './src/Routes/AuthRoute.js';
 const app = express();
 const port = 3000;
 app.use(cors());
 app.use(express.json());
+// nodemailer
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  next();
+});
+
+function sendEmail({ email, subject, message }) {
+  return new Promise((resolve, reject) => {
+    var transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: "bd7ukvxxl@code.edu.az",
+        pass: "bemd loos xxje uljy",
+      },
+    });
+
+    const mail_configs = {
+      from: "bd7ukvxxl@code.edu.az",
+      to: email,
+      subject: subject,
+      html: `
+      <p>${message}</p>
+      <p>Best Regards</p>
+      `,
+    };
+    transporter.sendMail(mail_configs, function (error, info) {
+      if (error) {
+        console.log(error);
+        return reject({ message: `An error has occurred` });
+      }
+      return resolve({ message: "Email sent successfully" });
+    });
+  }); 
+}
+
+app.get("/", (req, res) => {
+  sendEmail(req.query)
+    .then((response) => res.send(response.message))
+    .catch((error) => res.status(500).send(error.message));
+});
+
+
+
+
+
+
+
+
+
+
 // companies
 const companiesSchema = new mongoose.Schema({
   name: String,
@@ -133,9 +187,7 @@ app.delete("/reservation/:id", async (req, res) => {
 const blogSchema = new mongoose.Schema({
   image: String,
   name: String,
-  items: String,
   description: String,
-  detail: String,
 });
 const blogModule = mongoose.model("blog", blogSchema);
 app.get("/blog", async (req, res) => {
@@ -169,11 +221,11 @@ app.delete("/blog/:id", async (req, res) => {
 });
 // contact
 const contactSchema = new mongoose.Schema({
-  image: String,
+  
   name: String,
-  items: String,
-  description: String,
-  detail: String,
+  email: String,
+  phone: String,
+  message: String,
 });
 const contactModule = mongoose.model("contact", contactSchema);
 app.get("/contact", async (req, res) => {
@@ -205,10 +257,66 @@ app.delete("/contact/:id", async (req, res) => {
   const contact = await contactModule.findByIdAndDelete(id);
   res.send(contact);
 });
+// comment
+const commentSchema = new mongoose.Schema({
+  categoryId:Number,
+ comment:String
+});
+const commentModule = mongoose.model("comment", commentSchema);
+app.get("/comment", async (req, res) => {
+  const comment = await commentModule.find();
+  res.send(comment);
+});
+app.get("/comment/:id", async (req, res) => {
+  const { id } = req.params;
+  const comment = await commentModule.findById(id);
+  res.send(comment);
+});
+app.get("/categoriess", async (req, res) => {
+  const comment = await commentModule.find();
+  res.send(comment);
+});
+app.get("/categoriess/:categoryId", async (req, res) => {
+  const catgor = req.params.categoryId;
+  const comment = await menuModule.find({ categoryId: catgor });
+  res.send(comment);
+});
+
+
+
+app.post("/comment", async (req, res) => {
+  const body = req.body;
+  const comment = new commentModule(body);
+  await comment.save();
+  res.send(comment);
+});
+
+app.put("/comment/:id", async (req, res) => {
+  const { id } = req.params;
+  const body = req.body;
+  const comment = await commentModule.findByIdAndUpdate(id, body);
+  res.send(comment);
+});
+
+app.delete("/comment/:id", async (req, res) => {
+  const { id } = req.params;
+  const comment = await commentModule.findByIdAndDelete(id);
+  res.send(comment);
+});
 // auth
-mongoose
-  .connect("mongodb+srv://rufet:rufet@developermongo.nxg6jik.mongodb.net/")
-  .then(() => console.log("Connected!"));
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+app.use('/users',usersRouter);
+app.use('/',authRouter)
+// connection
+// mongoose
+//   .connect("mongodb+srv://rufet:rufet@developermongo.nxg6jik.mongodb.net/")
+//   .then(() => console.log("Connected!"));
+// app.listen(port, () => {
+//   console.log(`Example app listening on port ${port}`);
+// });
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => console.log('Connected to MongoDB'))
+  .catch(err => console.log('Failed to connect to MongoDB', err));
+
+app.listen(process.env.PORT, () => {
+  console.log(`Server is running on port ${process.env.PORT}`);
 });
