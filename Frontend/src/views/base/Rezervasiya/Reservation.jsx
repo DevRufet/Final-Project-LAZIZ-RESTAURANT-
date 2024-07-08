@@ -1,7 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import "./reservation.scss";
+import { AuthContext } from "../../../context/Auth";
+import { useNavigate } from "react-router-dom";
 function Reservation() {
+  const { token, logOut, decoded } = useContext(AuthContext);
+  const navigate=useNavigate()
   const [myinp1,setmyinp1]=useState('')
   const [myinp2,setmyinp2]=useState('')
   const [myinp3,setmyinp3]=useState('')
@@ -38,7 +42,7 @@ function Reservation() {
       <section id="heroResHall">
         <h1>Reservation</h1>
         <p>BOOK TABLE</p>
-        <form action="" className="resFormHall" onSubmit={(e)=>handleSubmit(e)}>
+        <form action="" className="resFormHall" onSubmit={(e)=> {token?handleSubmit(e):navigate('/login')}}>
           <div className="resFormHallItem">
             <div>
               <label htmlFor="">Date</label>

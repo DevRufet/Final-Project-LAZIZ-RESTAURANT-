@@ -13,17 +13,23 @@
         tr,td,th{
             border: 1px solid gray;
             border-radius: 10px;
+            img{
+                width: 150px;
+                height: 150px;
+                border-radius: 10px;
+            }
         }
         .blogImg{
-            width: 30%;
+            
             padding: 10px;
         }
         .blogName{
             font-size: 20px;
              text-align: center;
+             padding: 10px;
         }
         .blogDesc{
-            width: 30%;
+            padding: 10px;
             font-size: 15px;
             text-align: center;
         }
@@ -49,7 +55,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 30px;
+    padding: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
     button{

@@ -114,7 +114,7 @@ function AdminMenu() {
                 </button>
               </td>
               <td>
-                <button>Remove</button>
+                <button onClick={()=>deleteId(x._id)}>Remove</button>
               </td>
             </tr>
           ))}

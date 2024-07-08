@@ -1,4 +1,22 @@
 #heroNav {
+  ol{
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    gap: 5px;
+    margin-bottom: 0;
+    ul{
+      padding-left: 0;
+    }
+    a{
+      color: #222222;
+    }
+    a:hover{
+      color: rgb(246, 30, 35);
+      transition: 1s;
+    }
+    
+  }
     width: 90%;
     top: 10px;
     left: 10vh;
@@ -6,6 +24,7 @@
     z-index: 999;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   background-color: #ffffffe6;
   border-radius: 20px;
@@ -19,6 +38,7 @@
   justify-content: space-between;
   align-items: center;
   ul {
+    margin-bottom: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -116,3 +136,115 @@
     
   }
 }
+.btn{
+  display: none;
+}
+.active{
+  display: flex;
+}
+@media only screen and (max-width: 600px) {
+  .btn{
+    display: flex;
+  }
+  #heroNav{
+    width: 80%;
+  }
+.navCtr{
+  width: 70%;
+  button{
+    width: 40px;
+    height: 40px;
+  }
+  div{
+    font-size: 10px;
+  }
+  ul{
+    display: none;
+  }
+}
+.navbar{
+ display: none;
+}
+}
+@media only screen and (max-width: 1200px) {
+.navCtr {
+  button{
+    i{
+      font-size: 17px;
+    }
+    font-size: 17px;
+  }
+  ul{
+    gap: 17px;
+    a{
+      font-size: 18px;
+    }
+  }
+}
+
+}
+@media only screen and (max-width: 1050px) {
+  .navCtr {
+    button{
+      i{
+        font-size: 17px;
+      }
+      font-size: 17px;
+    }
+    ul{
+      gap: 17px;
+      padding-left: 0;
+      a{
+        font-size: 18px;
+      }
+    }
+  }
+  
+  }
+  @media only screen and (max-width: 980px) {
+    .navCtr {
+      button{
+        i{
+          font-size: 15px;
+        }
+        font-size: 15px;
+      }
+      ul{
+        gap: 15px;
+        padding-left: 0;
+        a{
+          font-size: 16px;
+        }
+      }
+    }
+    
+    }
+    @media only screen and (max-width: 900px) {
+      #heroNav{
+        
+          width: 80%;
+        
+      }
+      .btn{
+        display: flex;
+      }
+      .navbar{
+        display: none;
+       }
+       .navCtr{
+        ul{
+          display: none;
+        }
+       }
+      }
+      @media only screen and (max-width: 400px) {
+
+#heroNav{
+  left:5vh
+}
+.navCtr{
+  width: 90%;
+}
+
+      }
+      

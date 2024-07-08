@@ -9,14 +9,14 @@ function Register() {
   return (
    <>
    
-   <section>
-        <div className="logingeneral">
-          <div className="leftlogin">
-            <div>
+   <section id="heroLogin">
+        <div className="loginGeneral">
+          
+            
               <p>Register</p>
-            </div>
+            
 
-            <div>
+            
               <Formik
                 initialValues={{ email: "", password: "" }}
                 validationSchema={Yup.object({
@@ -44,7 +44,7 @@ function Register() {
                     });
                 }}
               >
-                <Form>
+                <Form className="loginFormItems">
                   <label htmlFor="email">Email Address</label>
                   <Field name="email" type="email" />
                   <ErrorMessage name="email" />
@@ -56,15 +56,15 @@ function Register() {
                   <button type="submit">Submit</button>
                 </Form>
               </Formik>
-            </div>
-            <div>
-              <p>Do you already have an account?</p>
+            
+            <div className="loginRegister">
+              <span>Do you already have an account?</span>
               <Link to={"/login"}>Login</Link>
             </div>
-          </div>
-
-          <div className="rightlogin"></div>
-        </div>
+          
+</div>
+          
+        
       </section>
    
    </>

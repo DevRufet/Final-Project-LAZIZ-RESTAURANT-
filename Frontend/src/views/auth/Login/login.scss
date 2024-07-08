@@ -1,0 +1,65 @@
+#heroLogin{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://preview.colorlib.com/theme/pato/images/photo-gallery-15.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    .loginGeneral{
+        
+        gap: 30px;
+        margin-top: 50px;
+        width: 35%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        p{
+            margin-top: 50px;
+            font-weight: 600;
+            font-size: 40px;
+            letter-spacing: 3px;
+        }
+        button{
+            background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,90,121,1) 67%, rgba(255,0,39,1) 100%);
+            width: 100%;
+            height: 50px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+            border-radius: 10px;
+        }
+    }
+}
+.loginRegister{
+    display: flex;
+  margin-bottom: 50px;
+   
+    span{
+        font-size: 20px;
+    }
+    a{
+        font-size: 20px;
+    }
+    a:hover{
+        font-size: 20px;
+        color: rgb(191, 81, 81);
+    }
+}
+.loginFormItems{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    input{
+        width: 100%;
+        font-size: 25px;
+        border-bottom: 1px solid #222222;
+    }
+}

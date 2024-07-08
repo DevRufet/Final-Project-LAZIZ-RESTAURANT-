@@ -43,14 +43,14 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/comment/:id" element={<Comment />} />
             </Route>
-          </Routes>
-          <Routes>
+          
+          <Route>
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />
-          </Routes>
+          </Route>
           {/*  */}
          
-            <Routes element={<PrivateRoute role={["Admin"]} />}>
+            <Route element={<PrivateRoute role={["Admin"]} />}>
               <Route path="/admin" element={<AdminLayout />}>
                 <Route index element={<AdminMenu />} />
                 <Route path="/admin/blog" element={<AdminBlog />} />
@@ -64,8 +64,8 @@ function App() {
                 <Route path="/admin/user" element={<AdminUser />} />
                 <Route path="/admin/verify/:id" element={<AdminVerify />} />
               </Route>
-            </Routes>
-        
+            </Route>
+        </Routes>
         </AuthProvider>
       </BrowserRouter>
     </>

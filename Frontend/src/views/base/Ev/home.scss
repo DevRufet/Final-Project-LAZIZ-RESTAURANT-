@@ -418,3 +418,23 @@
     align-items: center;
     gap: 60px;
 }
+@media only screen and (max-width: 760px) {
+  
+  .sliderAbout{
+    top: 20vh;
+    left: 25vh;
+    p{
+      font-size: 50px;
+    }
+  }
+  #heroItalian{
+    .heroItalianCtr{
+      flex-direction: column;
+      .italianImg{
+        width: 70vw;
+        height: 50vh;
+        
+      }
+    }
+  }
+}

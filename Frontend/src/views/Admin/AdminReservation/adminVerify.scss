@@ -1,5 +1,46 @@
 .adminVerify{
+    border-radius: 10px;
+    background-color: #f7f8f9fa;
+    padding: 30px;
+    gap: 30px;
     position: absolute;
-    top: 100px;
-    left: 300px;
+    width: 30%;
+    top: 180px;
+    left: 600px;
+    border: 1px solid black;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        label{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        input{
+            border-bottom: 0.5px solid gray;
+            background-color: #f7f8f9fa;
+
+font-size: 18px;
+width: 100%;
+height: 50px;
+        }
+        textarea{
+    background-color: #f7f8f9fa;
+  width:100%;
+  border-bottom: 0.5px solid gray;
+  height: 100px;
+        }
+    }
+    button{
+        margin-top: 30px;
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        font-size: 20px;
+        color: #f7f8f9fa;
+        background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(91,188,224,1) 67%, rgba(255,0,39,1) 100%);
+    }
 }
