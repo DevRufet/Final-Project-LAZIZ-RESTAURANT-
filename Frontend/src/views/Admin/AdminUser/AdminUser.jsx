@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./adminUser.scss";
 import { AuthContext } from "../../../context/Auth";
+import { Link } from "react-router-dom";
 
 function AdminUser() {
   const [datas, setdatas] = useState([]);
@@ -16,6 +17,14 @@ function AdminUser() {
     });
     const data = await res.json();
     setdatas(data)
+  }
+  // deleteId
+  async function deleted(id) {
+    const res = await fetch("http://localhost:3000/users/"+id, {
+      method:'delete',
+      headers: { Authorization: token },
+    });
+    getAllproducts()
   }
   // async function deleteId(id) {
   //   const response = await fetch('http://localhost:3000/'+id,{
@@ -47,10 +56,10 @@ function AdminUser() {
                 <td className="blogName">{x.password}</td>
                 <td className="blogDesc">{x.role}</td>
                 <td className="blogRem">
-                  <button>Remove</button>
+                  <button onClick={()=>deleted(x._id)}>Remove</button>
                 </td>
                 <td className="blogRem">
-                  <button>Edit</button>
+                  <button><Link to={`/admin/edit/${x._id}`}>Edit</Link></button>
                 </td>
               </tr>
             );

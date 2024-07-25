@@ -6,10 +6,28 @@
   z-index: 999;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.9019607843);
   border-radius: 20px;
   opacity: 0.9;
+}
+#heroNav ol {
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  gap: 5px;
+  margin-bottom: 0;
+}
+#heroNav ol ul {
+  padding-left: 0;
+}
+#heroNav ol a {
+  color: #222222;
+}
+#heroNav ol a:hover {
+  color: rgb(246, 30, 35);
+  transition: 1s;
 }
 
 .navCtr {
@@ -32,6 +50,7 @@
    */
 }
 .navCtr ul {
+  margin-bottom: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -109,4 +128,103 @@
 .navCtr button:hover i {
   color: rgb(246, 30, 35);
   transition: 1s;
+}
+
+.btn {
+  display: none;
+}
+
+.active {
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .btn {
+    display: flex;
+  }
+  #heroNav {
+    width: 80%;
+  }
+  .navCtr {
+    width: 70%;
+  }
+  .navCtr button {
+    width: 40px;
+    height: 40px;
+  }
+  .navCtr div {
+    font-size: 10px;
+  }
+  .navCtr ul {
+    display: none;
+  }
+  .navbar {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .navCtr button {
+    font-size: 17px;
+  }
+  .navCtr button i {
+    font-size: 17px;
+  }
+  .navCtr ul {
+    gap: 17px;
+  }
+  .navCtr ul a {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .navCtr button {
+    font-size: 17px;
+  }
+  .navCtr button i {
+    font-size: 17px;
+  }
+  .navCtr ul {
+    gap: 17px;
+    padding-left: 0;
+  }
+  .navCtr ul a {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .navCtr button {
+    font-size: 15px;
+  }
+  .navCtr button i {
+    font-size: 15px;
+  }
+  .navCtr ul {
+    gap: 15px;
+    padding-left: 0;
+  }
+  .navCtr ul a {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #heroNav {
+    width: 80%;
+  }
+  .btn {
+    display: flex;
+  }
+  .navbar {
+    display: none;
+  }
+  .navCtr ul {
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #heroNav {
+    left: 5vh;
+  }
+  .navCtr {
+    width: 90%;
+  }
 }/*# sourceMappingURL=mainNavbar.css.map */

@@ -26,7 +26,7 @@ function Register() {
                   password: Yup.string().required("Required"),
                 })}
                 onSubmit={(values) => {
-                  fetch("http://localhost:3000/register/", {
+                  fetch("http://localhost:3000/register", {
                     headers: {
                       Accept: "application/json",
                       "Content-Type": "application/json",

@@ -1,0 +1,61 @@
+.userTable {
+  position: absolute;
+  top: 100px;
+  left: 300px;
+}
+.userTable a {
+  color: #222222;
+}
+.userTable table {
+  width: 100%;
+  border: 1px solid gray;
+}
+.userTable table button {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: gold;
+}
+.userTable tr, .userTable td, .userTable th {
+  font-size: 20px;
+  padding: 30px;
+  font-weight: 500;
+  border: 1px solid gray;
+}
+
+.adminEditForm {
+  display: flex;
+  background-color: rgba(247, 248, 249, 0.9803921569);
+  width: 30%;
+  border-radius: 10px;
+  padding: 30px;
+  gap: 20px;
+  position: absolute;
+  flex-direction: column;
+  top: 200px;
+  left: 600px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.adminEditForm label {
+  font-size: 20px;
+  font-weight: 500;
+  color: #222222;
+}
+.adminEditForm input {
+  font-size: 20px;
+  width: 100%;
+  height: 50px;
+  border-bottom: 0.5px solid gray;
+  background-color: rgba(247, 248, 249, 0.9803921569);
+}
+.adminEditForm button {
+  width: 100%;
+  height: 50px;
+  border-radius: 1px solid gray;
+  font-size: 20px;
+  color: #ffffff;
+  border-radius: 10px;
+  background: rgb(116, 13, 13);
+  background: linear-gradient(90deg, rgb(116, 13, 13) 0%, rgb(255, 0, 35) 0%, rgb(82, 69, 138) 49%, rgb(17, 140, 209) 100%);
+}/*# sourceMappingURL=adminUser.css.map */

@@ -27,6 +27,7 @@ import Login from "./views/auth/Login/Login";
 import AuthProvider, { AuthContext } from "./context/Auth.jsx";
 import AdminLogin from "./views/Admin/AdminLogin/AdminLogin";
 import PrivateRoute from "./views/base/PrivateRoute/PrivateRoute";
+import AdminEdit from "./views/Admin/AdminUser/AdminEdit.jsx";
 function App() {
   return (
     <>
@@ -50,7 +51,7 @@ function App() {
           </Route>
           {/*  */}
          
-            <Route element={<PrivateRoute role={["Admin"]} />}>
+            <Route element={<PrivateRoute role={["admin"]} />}>
               <Route path="/admin" element={<AdminLayout />}>
                 <Route index element={<AdminMenu />} />
                 <Route path="/admin/blog" element={<AdminBlog />} />
@@ -63,6 +64,7 @@ function App() {
                 <Route path="/admin/companies" element={<AdminCompanies />} />
                 <Route path="/admin/user" element={<AdminUser />} />
                 <Route path="/admin/verify/:id" element={<AdminVerify />} />
+                <Route path="/admin/edit/:id" element={<AdminEdit />} />
               </Route>
             </Route>
         </Routes>

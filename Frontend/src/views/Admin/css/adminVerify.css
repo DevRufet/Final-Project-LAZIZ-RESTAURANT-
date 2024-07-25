@@ -1,5 +1,45 @@
 .adminVerify {
+  border-radius: 10px;
+  background-color: rgba(247, 248, 249, 0.9803921569);
+  padding: 30px;
+  gap: 30px;
   position: absolute;
-  top: 100px;
-  left: 300px;
+  width: 30%;
+  top: 180px;
+  left: 600px;
+  border: 1px solid black;
+}
+.adminVerify div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+.adminVerify div label {
+  font-size: 20px;
+  font-weight: 500;
+}
+.adminVerify div input {
+  border-bottom: 0.5px solid gray;
+  background-color: rgba(247, 248, 249, 0.9803921569);
+  font-size: 18px;
+  width: 100%;
+  height: 50px;
+}
+.adminVerify div textarea {
+  background-color: rgba(247, 248, 249, 0.9803921569);
+  width: 100%;
+  border-bottom: 0.5px solid gray;
+  height: 100px;
+}
+.adminVerify button {
+  margin-top: 30px;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: rgba(247, 248, 249, 0.9803921569);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(91, 188, 224) 67%, rgb(255, 0, 39) 100%);
 }/*# sourceMappingURL=adminVerify.css.map */

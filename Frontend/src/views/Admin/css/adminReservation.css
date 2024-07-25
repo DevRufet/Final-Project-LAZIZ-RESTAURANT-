@@ -3,6 +3,9 @@
   top: 100px;
   left: 300px;
 }
+.adminReservation a {
+  color: #222222;
+}
 .adminReservation table {
   width: 100%;
   border: 1px solid gray;

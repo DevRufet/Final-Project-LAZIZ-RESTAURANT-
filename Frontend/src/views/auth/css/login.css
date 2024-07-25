@@ -1,0 +1,64 @@
+#heroLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://preview.colorlib.com/theme/pato/images/photo-gallery-15.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+#heroLogin .loginGeneral {
+  gap: 30px;
+  margin-top: 50px;
+  width: 35%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+#heroLogin .loginGeneral p {
+  margin-top: 50px;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+#heroLogin .loginGeneral button {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 90, 121) 67%, rgb(255, 0, 39) 100%);
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.loginRegister {
+  display: flex;
+  margin-bottom: 50px;
+}
+.loginRegister span {
+  font-size: 20px;
+}
+.loginRegister a {
+  font-size: 20px;
+}
+.loginRegister a:hover {
+  font-size: 20px;
+  color: rgb(191, 81, 81);
+}
+
+.loginFormItems {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+.loginFormItems input {
+  width: 100%;
+  font-size: 25px;
+  border-bottom: 1px solid #222222;
+}/*# sourceMappingURL=login.css.map */

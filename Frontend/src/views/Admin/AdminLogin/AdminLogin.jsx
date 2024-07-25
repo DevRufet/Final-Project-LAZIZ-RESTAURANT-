@@ -11,7 +11,7 @@ function AdminLogin() {
     const { token, logOut, decoded } = useContext(AuthContext);
     const navigate = useNavigate()
     function adminol(){
-        {decoded && decoded.role === "Admin" ? (
+        {decoded && decoded.role === "admin" ? (
             navigate("/admin/admins")
                   ) : navigate("/login")}
     }

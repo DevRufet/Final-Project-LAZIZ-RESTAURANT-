@@ -38,6 +38,7 @@ usersRouter.post('/',authMiddleware(["admin"]), async (req, res) => {
 });
 
 usersRouter.put('/:id',authMiddleware(["admin"]), async (req, res) => {
+ 
   try {
     const { id } = req.params;
     const body = req.body;
